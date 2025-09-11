@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Jupyter & Streamlit cache
+.ipynb_checkpoints/
+.streamlit/
+
+# Build / Packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Data / Outputs
+*.csv
+*.xlsx
+*.json
+*.db
+
+# Forensic metadata output
+forensic_metadata.csv
+metadata_features.csv
