@@ -155,7 +155,7 @@ C:\Users\ASUS\Downloads\AI
 
 - git checkout -b feature/your-feature
 - git commit -m "Add your feature"
--git push origin feature/your-feature
+- git push origin feature/your-feature
 #### Then open a Pull Request.
 
 
