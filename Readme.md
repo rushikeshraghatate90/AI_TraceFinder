@@ -106,49 +106,25 @@ streamlit run scr/app/main_app.py
 
 ## 🗂 Project Structure
 ```
-C:\Users\ASUS\Downloads\AI
+Project/
 │
-├── Data/                              # Raw scanned image datasets
-│   ├── Flatfield/
-│   ├── Official/
-│   ├── Tampered images/
-│   └── wikipedia/
-│       ├── enhanced_features.pkl
-│       ├── flatfield_residuals.pkl
-│       ├── hybrid_feat_scaler.pkl
-│       ├── hybrid_label_encoder.pkl
-│       └── official_datasets.pkl
+├── ALL_CSV/                  # CSV datasets and logs
+├── models/                   # Trained models and checkpoints
+├── preprocessed_flatfield/   # Image preprocessing scripts
+├── processed_data/Flatfield/ # Processed datasets
+├── residuals/                # Residual maps or noise data
+├── results/                  # Evaluation outputs and plots
 │
-├── logs/                              # Model training & evaluation logs
+├── scr/                      # Source code
+│   ├── baseline/             # Baseline model
+│   ├── cnn/                  # CNN models
+│   ├── hybrid_cnn/           # Hybrid/combined models
+│   └── tempered/             # Experimental models
 │
-├── models/                            # Trained models
-│   ├── dual_branch_cnn.h5
-│   ├── hybrid_model.pkl
-│   ├── random_forest.pkl
-│   ├── svm.pkl
-│   └── scaler.pkl
-│
-├── results/                           # Evaluation reports and plots
-│
-├── scr/
-│   ├── app/
-│   │   └── main_app.py                # Streamlit main interface
-│   ├── baseline/
-│   │   ├── predict_baseline.py
-│   │   └── train_baseline.py
-│   ├── cnn/
-│   │   ├── predict_cnn.py
-│   │   └── train_cnn.py
-│   ├── hybrid_cnn/
-│   │   ├── eval_hybrid_cnn.py
-│   │   └── visualize_data.py
-│   └── eda.py                         # Exploratory analysis script
-│
-├── processed_data/                    # Preprocessed intermediate data
-├── residuals/                         # Extracted noise & residual maps
-├── Residuals_Paths/                   # Path references for residuals
-├── requirements.txt
-└── README.md
+├── app.py                    # Main application (Streamlit/Flask)
+├── LICENSE                   # License file
+├── Readme.md                 # Project documentation
+└── .gitignore                # Git ignore rules
 ```
 
 ## 🤝 Contributing
